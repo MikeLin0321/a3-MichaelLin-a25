@@ -47,6 +47,22 @@ button:hover, #submitData:hover {
   background: #0056b3;
 }
 
+.register-btn {
+    background-color: rgb(248, 93, 93);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #E53935;
+    color: white;
+}
+
 /* Table styling */
 table {
   width: 100%;
