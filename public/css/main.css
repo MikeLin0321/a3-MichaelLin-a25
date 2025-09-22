@@ -1,0 +1,115 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 500px;
+  display: flex;
+  gap : 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin: 5px 5px 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  flex: 1;
+}
+
+button, #submitData {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover, #submitData:hover {
+  background: #0056b3;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #007bff;
+  color: #fff;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+td button {
+  background: #dc3545;
+  border: none;
+  padding: 6px 12px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+
+}
+
+td button:hover {
+  background: #b52a38;
+}
+
+#logout-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #e74c3c; /* red for attention */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#logout-button:hover {
+  background-color: #c0392b; /* darker red on hover */
+}
+
+.editable-cell {
+  cursor: pointer;
+}
+.editable-cell:hover {
+  background-color: #f0f0f0;
+}

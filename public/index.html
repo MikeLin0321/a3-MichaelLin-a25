@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CS4241 Assignment 2</title>
+    <meta charset="utf-8">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- get rid of favicon error -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  </head>
+  <body>
+    <table id = "todoTable">
+      <tr>
+        <th>Due Date</th>
+        <th>Done</th>
+        <th>Days Remaining</th>
+        <th>Thing</th>
+        <th>Delete</th>
+      </tr>
+    </table>
+
+    <form>
+      <input type="date" id="eventDate" placeholder="Due Date"><input type="text" id="eventThing" placeholder="Thing">
+      <button id = "submitData" type="submit">submit</button>
+    </form>
+
+    <form action="/logout" method="POST">
+      <button type="submit" value="Logout" id="logout-button">Logout</button>
+    </form>
+
+  </body>
+</html>

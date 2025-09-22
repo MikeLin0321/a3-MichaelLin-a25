@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Todo</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Edit Todo</h1>
+  <form id="editForm">
+    <input type="hidden" id="id">
+    <label>Thing: <input type="text" id="thing"></label><br>
+    <label>Date: <input type="date" id="date"></label><br>
+    <button type="submit">Save</button>
+  </form>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    async function loadTodo() {
+      const res = await fetch(`/edit?id=${id}`, { headers: { Accept: "application/json" } });
+      const todo = await res.json();
+      document.getElementById("id").value = todo.id;
+      document.getElementById("thing").value = todo.thing;
+      document.getElementById("date").value = todo.date;
+    }
+
+    loadTodo();
+
+    async function saveChanges(e) {
+      e.preventDefault();
+      const thing = document.getElementById("thing").value;
+      const date = document.getElementById("date").value;
+      await fetch(`/edit/${id}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ thing, date })
+      });
+      console.log(id);
+      window.location.href = "/dashboard";
+    }
+    document.getElementById("editForm").addEventListener("submit", saveChanges);
+  </script>
+</body>
+</html>

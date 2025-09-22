@@ -1,0 +1,19 @@
+{
+  "name": "Todolist",
+  "version": "1.0",
+  "description": "A simple todo list application",
+  "author": "Michael Lin",
+  "scripts": {
+    "start": "node server.improved.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-flash": "^0.1.1",
+    "cookie-session": "^2.1.1",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mime": "^2.6.0",
+    "mongodb": "^6.19.0"
+  }
+}
