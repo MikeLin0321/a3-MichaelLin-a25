@@ -33,8 +33,8 @@ input[type="date"] {
 }
 
 button, #submitData {
-  background: #007bff;
-  color: #fff;
+  background: #9cccff;
+  color: black;
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
@@ -48,8 +48,8 @@ button:hover, #submitData:hover {
 }
 
 .register-btn {
-    background-color: rgb(248, 93, 93);
-    color: #ffffff;
+    background-color: rgb(255, 137, 137);
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
