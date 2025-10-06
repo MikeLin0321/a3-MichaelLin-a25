@@ -17,6 +17,7 @@ Include a very brief summary of your project here. Images are encouraged, along 
 - a list of Express middleware packages you used and a short (one sentence) summary of what each one does. If you use a custom function, please add a little more detail about what it does.
 
 ## Technical Achievements
+5 points for host the project on railway.io
 - **Tech Achievement 1**: 
   - the goal for this assignment is the same as A2, make a todo list. However, this version can let user register account and only view their own list
   - Implemented the website through railway.io instead of render
